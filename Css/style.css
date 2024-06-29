@@ -177,15 +177,13 @@ footer{
         padding: 20px 0px;
     }
     .header-img{
-        display: flex;
         width: 236px;
-        height: auto;
-         
+        height: auto;       
     }
 
     .main_container{
-        display: flex;
-        flex-direction: column-reverse;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         flex-wrap: wrap;
         width: 430px;
         height: auto;       
@@ -242,7 +240,7 @@ footer{
     }  
 }        
 /*----------------------------------------TABLET-------------------------------------------*/
-@media (min-width: 768px) { /*min 600*/
+/*@media (min-width: 768px) { /*min 600
     .header{
         width: 768px;
     }
