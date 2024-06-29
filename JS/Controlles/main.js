@@ -23,10 +23,21 @@ function createCard(name, precio, imagen, id) {
                     </div>
     `;
 
+    const deleteButton = card.querySelector(".delete-button");
+    deleteButton.addEventListener("click", async () => {
+        try{
+        await servicesProduct.deleteProduct(id);
+        card.remove();
+        }catch(error){
+            console.log(error);
+            }
+            });
+
     productContainer.appendChild(card); //produccontainer agrega como hijo a card
     return card;
 
-};
+}
+
 
 const render = async () =>{
     try {
