@@ -218,7 +218,6 @@ footer{
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        
         gap: 10px;
         padding: 10px;
         align-content: center;
@@ -246,8 +245,8 @@ footer{
     
     }  
 }        
-/*----------------------------------------TABLET-------------------------------------------*/
-/*@media (min-width: 768px) { /*min 600
+/*----------------------------------------TABLET------------------------------------------*/
+@media (max-width: 768px) { 
     .header{
         width: 768px;
     }
